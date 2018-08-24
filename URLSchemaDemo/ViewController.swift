@@ -9,9 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var lblText: UILabel!
+    var message = ""
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("message == \(message)")
+        
+        self.lblText.text = self.message
         // Do any additional setup after loading the view, typically from a nib.
     }
 
